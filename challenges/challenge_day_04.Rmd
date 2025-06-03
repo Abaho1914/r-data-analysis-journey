@@ -1,0 +1,10 @@
+---
+title: "Day 04 Challenge – Organ Donation Survey Responses"
+output: html_document
+---
+
+## 📝 Scenario:
+
+You're analyzing responses from 10 students about their **willingness to donate organs** and their **academic year**.
+
+\`\`\`r donation \<- c("Yes", "No", "Yes", "Maybe", "No", "Yes", "No", "Yes", "Yes", "No") year \<- c("First", "Third", "Second", "Fifth", "Third", "Second", "First", "Fourth", "Fifth", "Third")
