@@ -24,4 +24,15 @@ table(donation,year)
 #Bonus plotting the factor using barplot(table(donation))
 barplot(table(donation))
 
+#Plotting a pie chart for willingness to donate
+
+# count frequencies of each response
+donation_freq <- table(donation)
+print(donation_freq)
+
+#Create a pie chart
+pie(donation_freq,main = "Willing to Donate",
+    col = c("green","red","orange"),
+    labels = paste(names(donation_freq),
+                   donation_freq,sep = ":"))
 
