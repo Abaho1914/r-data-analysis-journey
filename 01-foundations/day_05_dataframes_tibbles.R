@@ -40,5 +40,3 @@ print(patients_tbl)
 patients_tbl %>%
   filter(Temperature > 37 )%>%
   select(ID,Name,Diagnosis)
-
-
