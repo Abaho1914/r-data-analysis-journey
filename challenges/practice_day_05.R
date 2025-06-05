@@ -20,4 +20,3 @@ medical_students_tbl <- as_tibble(medical_students)
 
 medical_students_tbl%>%
   select(Name,Willing_to_Donate)
-
