@@ -1,0 +1,22 @@
+---
+title: "Day 08 Challenge – Data I/O for Organ Study"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+## 📋 Scenario:
+
+You collected data from a mini study of 6 medical students.
+
+\`\`\`r data \<- data.frame( Name = c("Ali", "Becky", "Charles", "Dina",
+"Elvis", "Faith"), Year = c("1st", "2nd", "3rd", "4th", "5th", "2nd"),
+Score = c(13, 9, 14, 11, 15, 10), Willing_to_Donate = c(TRUE, FALSE,
+TRUE, TRUE, TRUE, FALSE) )
+
+```{r}
+ organ_data <- data.frame( Name = c("Ali", "Becky", "Charles", "Dina", "Elvis", "Faith"), Year = c("1st", "2nd", "3rd", "4th", "5th", "2nd"), Score = c(13, 9, 14, 11, 15, 10), Willing_to_Donate = c(TRUE, FALSE, TRUE, TRUE, TRUE, FALSE) )
+# saving data 
+write_csv(organ_data,"outputs/study_data.csv")
+```
