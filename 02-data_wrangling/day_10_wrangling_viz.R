@@ -9,12 +9,14 @@ str(students)
 
 
 #Bar chart of students by year
-
-students %>%count(Year) %>% 
-  ggplot(aes(x=Year,y = n))+
-  geom_col(fill= "steelblue")+
+students %>%
+  count(Year) %>%
+  ggplot(aes(x = Year, y = n)) +
+  geom_col(fill = "steelblue") +
   labs(title = "Number of Students per Year", y = "Count", x = "Year")
 
+# Save the plot
+ggsave("students_per_year.png", width = 8, height = 5, dpi = 300)
 
 # 2. Add Knowledge Level & Plot by Category
 str(students)
@@ -38,6 +40,8 @@ ggplot(students, aes(x = Year, y = Score, color = Willing_to_Donate)) +
 ggplot(students, aes(x = Knowledge_level, y = Score, fill = Knowledge_Level)) +
   geom_boxplot() +
   labs(title = "Score Distribution by Knowledge Level")
+
+
 
 
 
