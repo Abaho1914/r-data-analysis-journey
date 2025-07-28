@@ -1,0 +1,21 @@
+---
+title: "Day 13 Challenge – tidyr Basics"
+output: html_document
+---
+
+## 🎯 Scenario
+
+You have `exams_wide.csv` with students' exam scores in wide format.
+
+## Tasks:
+
+1.  Load `exams_wide.csv`.
+2.  Convert the data to **long format** (Name, Exam, Score).
+3.  Calculate for each student:
+    -   Total score
+    -   Average score
+    -   Number of exams with score ≥ 12
+4.  Pivot the data back to **wide format**, adding a column `Average_Score`.
+5.  Save the final long and wide datasets as:
+    -   `outputs/exams_long.csv`
+    -   `outputs/exams_summary.csv`
