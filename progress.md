@@ -90,6 +90,14 @@ This file tracks my daily R data analysis practice, organized by weeks and topic
 -   Used `rowwise()` for row-level operations (e.g., averaging multiple scores).
 -   Summarised performance groups with counts and averages.
 
+
+### Day 13 – Data Tidying with tidyr
+- Learned `pivot_longer()` to convert wide data to long format.
+- Used `pivot_wider()` to revert long data to wide format.
+- Practiced handling missing values with `replace_na()`.
+- Calculated summary statistics from long-format data.
+
+
 ------------------------------------------------------------------------
 
 \
