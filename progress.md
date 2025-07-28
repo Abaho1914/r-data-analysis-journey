@@ -83,10 +83,14 @@ This file tracks my daily R data analysis practice, organized by weeks and topic
 -   Learned filtering joins: `semi_join()` and `anti_join()`.
 -   Combined `students.csv` with lab results and blood type datasets.
 
+### Day 12 – Advanced dplyr
+
+-   Learned `case_when()` for conditional categorization.
+-   Applied `across()` to transform multiple columns at once.
+-   Used `rowwise()` for row-level operations (e.g., averaging multiple scores).
+-   Summarised performance groups with counts and averages.
+
 ------------------------------------------------------------------------
 
-## **Next Steps**
-
--   **Day 12:** Advanced `dplyr` – `case_when()`, `across()`, rowwise operations.
--   **Day 13:** Data tidying with `tidyr` – `pivot_longer()` & `pivot_wider()`.
--   **Day 14:** Real-world wrangling challenge using multiple datasets.
+\
+\
