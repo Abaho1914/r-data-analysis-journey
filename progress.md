@@ -98,6 +98,13 @@ This file tracks my daily R data analysis practice, organized by weeks and topic
 - Calculated summary statistics from long-format data.
 
 
+### Day 14 – Real-World Wrangling Challenge
+- Combined `students.csv` and `exams_wide.csv` for integrated analysis.
+- Reshaped data with `pivot_longer()`, summarized with `dplyr`, and categorized performance with `case_when()`.
+- Created bar charts for average scores by year and performance distribution.
+- Exported final datasets and plots.
+
+
 ------------------------------------------------------------------------
 
 \
