@@ -53,3 +53,37 @@ ggplot(top_track_per_week, aes(x = week, y = rank, label = track)) +
     y = "Chart Rank (1 = Best)"
   ) +
   theme_minimal()
+
+
+df <- tribble(
+  ~Id,~bp1,~bp2,
+  "A",120,100,
+  "B",150,115,
+  "C",120,125
+)
+
+df_long <- df %>% pivot_longer(
+  cols = starts_with("bp"),
+  names_to = "measurement",
+  values_to = "value"
+)
+
+df_long
+
+
+who_long <-who %>%
+  pivot_longer(
+    cols = starts_with("new"),         # All the measurement columns
+    names_to = "key",                  # Puts column names into a new column called `key`
+    values_to = "cases",               # Values go into a column called `cases`
+    values_drop_na = TRUE              # Drop missing values
+  )
+
+who_tidy <- who_long %>%
+  separate(key, into = c("new", "type", "sexage"), sep = "_") %>%
+  select(-new) %>%  # Drop the constant "new"
+  mutate(
+    sex = substr(sexage, 1, 1),
+    age = substr(sexage, 2, nchar(sexage))
+  ) %>%
+  select(-sexage)
